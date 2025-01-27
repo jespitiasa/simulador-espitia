@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link type="image/svg" sizes="16x16" rel="icon" href="./public/img/oink.svg">
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Oink!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+        <h1>Simulador de Home Banking</h1>
+        <div class="header">
+          <img style="height: 100px; width: auto;" class="logoink" src="./public/img/oink.svg"/>
+          <div class="align-left">
+            <img class="avatarimg" src="./public/img/avatar.svg"/>
+            <span id="nombre">Bienvenido/a</span>
+          </div>
+        </div>
+    </header>
+    <main>
+      <section id="interaction-area">
+          <p>Bienvenido al simulador de Home Banking. Cargando...</p>
+          <div class="white-container">
+            <div class="menu-container">
+              <h1 class="tu-cuenta">Tu cuenta</h1>
+              <button class="links" onclick="extraerDinero()">Extraer dinero</button>
+              <button class="links" onclick="depositarDinero()">Depositar dinero</button>
+              <button class="links" onclick="pagarServicio()">Pagar servicios</button>
+              <button class="links" onclick="transferirDinero()">Transferir dinero</button>
+              <button class="links" onclick="compraDolares()">Comprar dolares</button>
+              <button class="links" onclick="cambiarLimiteDeExtraccion()">Cambiar límite de extracción</button>
+            </div>
+            <div class="green-container">
+              <div class="cuenta-info">
+                <p>Saldo en tu cuenta</p>
+                <h3 id="saldo-cuenta">$</h3>
+                <p id="limite-extraccion">Tu límite de extracción es: </p>
+              </div>
+            </div>
+          </div>
+      </section>
+  </main>
+  <footer>
+      <p>&copy; 2025 Simulador de Home Banking</p>
+  </footer>
+    <script src="./js/login.js"></script>
+    <script src="./js/transacciones.js"></script>
+    <script src="./js/homebanking.js"></script>
+  </body>
+</html>
